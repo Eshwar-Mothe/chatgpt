@@ -1,0 +1,40 @@
+html,body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    background-color: gray;
+}
+
+.container div{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.container div:nth-child(2){
+    animation-direction: reverse;
+}
+
+.box{
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    width: 15rem;
+    margin:0 .5rem;
+    word-wrap: normal;
+    text-wrap:balance;
+    border-radius: 5px;
+}
+
+
+
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
